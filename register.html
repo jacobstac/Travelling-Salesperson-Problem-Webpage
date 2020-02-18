@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Jacob's TSP sim</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1> Register </h1> 
+    <header style="background-color: antiquewhite;">
+        <nav>
+            <ul>
+                <li> <a href="index.html"> <h3>Home</h3> </a> </li>
+                <li> <a href="aboutme.html"> <h3>About me</h3> </a></li>
+                <li> <h3>Register</h3> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div>
+        <form>
+            <label for="fname">First name</label> <br>
+            <input type="text" id="fname" name="fname" required> <br>
+
+            <label for="lname">Last name</label> <br>
+            <input type="text" id="lname" name="lname" required> <br>
+
+            <label for="bday">Birth day</label> <br>
+            <input type="date" name="bday"> <br>
+
+            <label for="email">email</label> <br>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="password">Password</label> <br>
+            <input type="password" min="5" name="password"> <br>
+
+            <label for="tourmake">Type of tour-making algorithm</label> <br>
+            <input type="radio" name="tourmake" value="RandomTour">Random Tour</label> <br>
+            <input type="radio" name="tourmake" value="Greadytour">Gready tour</label> <br>
+            <input type="radio" name="tourmake" value="Smarttour">Smart tour</label> <br>
+            <h4> Here I want to create a function of chosing different tour improevent algoritms with chosen parameters
+                <br>
+                then choose the order of them</h4> <br>
+            1st algoritm:
+            <select name="improvementALG1">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
+            2nd algoritm:
+            <select name="improvementALG2">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
+            3rd algoritm:
+            <select name="improvementALG3">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
+
+            <input type="submit" value="Register">
+            <input type="Reset">
+        </form>
+    </div>
+    <div>
+        <footer> made with love</footer>
+    </div>
+
+</body>
+
+</html>
