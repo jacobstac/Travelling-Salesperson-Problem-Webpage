@@ -5,6 +5,8 @@
 
 The Traveling Salesperson Simulator will become a mindblowing interactive webpage where you, the user, will experience the wonderful world of gluing together different pre-made algorithms to create the shortest tour between different cities. The best results will 
 
+![The initial idea of the webpage](Resources/webidea.png)
+
 
 
 ## Project plan and progress
