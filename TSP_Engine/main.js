@@ -11,3 +11,8 @@ Initial plan:
 5. find a way to print the results
 
 */
+
+var button = document.getElementsByTagName("button")[0];
+button.addEventListener("click", function(){
+    console.log("clickeruu");
+})
