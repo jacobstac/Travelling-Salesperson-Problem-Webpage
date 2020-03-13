@@ -16,3 +16,17 @@ var button = document.getElementsByTagName("button")[0];
 button.addEventListener("click", function(){
     console.log("clickeruu");
 })
+
+var add = document.getElementById("add");
+var input = document.getElementById("uinput");
+var ul = document.getElementById("ul2")
+
+
+add.addEventListener("click", function() {
+    if(input.value.length > 0) {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+        input.value =""
+    }
+})
