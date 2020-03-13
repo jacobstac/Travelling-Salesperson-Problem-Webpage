@@ -2,7 +2,7 @@ console.log("det funkar");
 
 var table = document.querySelector("table");
 
-const width = 20;
+const width = 20; 
 const height = 30;
 
 class node {
@@ -24,23 +24,28 @@ function createGrid() {
   }
 }
 
+function nodeListen(){
+    var cells = document.querySelectorAll("th");
+    Array.from(cells).forEach(function(cell) {
+      cell.addEventListener("click", function(event) {
+        var marked = event.target;
+        var cell = marked.cellIndex;
+        var row = marked.parentElement.rowIndex;
+        marked.innerHTML = "\u2B24"
+        marked.className = "marked"
+        cities.push(new node(cell, row));
+    
+        console.log("cell is: " + cell);
+        console.log("row is: " + row);
+      });
+    });
+}
+
+
+
+
 var cities = [];
 createGrid();
-
-var cells = document.querySelectorAll("th");
-Array.from(cells).forEach(function(cell) {
-  cell.addEventListener("click", function(event) {
-    var marked = event.target;
-    var cell = marked.cellIndex;
-    var row = marked.parentElement.rowIndex;
-    marked.innerHTML = "\u2B24"
-    marked.className = "marked"
+nodeListen();
 
 
-
-    cities.push(new node(cell, row));
-
-    console.log("cell is: " + cell);
-    console.log("row is: " + row);
-  });
-});
