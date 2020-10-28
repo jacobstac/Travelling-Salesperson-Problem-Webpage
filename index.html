@@ -1,42 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Jacob's TSP sim</title> 
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <title> Jacob's TSP sim</title> 
+    <link rel="stylesheet" type="text/css" href="Styling/style.css">
+
+</head>
+
+<body>
+    <h1> TSP simulator </h1> 
+    <header>
+        <nav>
+            <ul>
+                <li> <h3>Home</h3> </li>
+                <li> <a href="aboutme.html" >  <h3>About Me</h3> </a></li>
+                <li> <a href="challanges.html" > <h3>TSP Challanges</h3> </a></li>
+                <li> <a href="algorithms.html" > <h3>The Algorithms</h3> </a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-    </head>
-    <body>
-        <h1>TSP simulator </h1>
-        <header>
-            <nav>
-                <ul>
-                    <li> <h3>Home</h3></li>
-                    <li> <a href="aboutme.html" >  <h3>About me</h3> </a></li>
-                    <li> <a href="register.html" > <h3>Register</h3> </a></li>
-                    <li> <a href="flex.html" > <h3>flex test</h3> </a></li>
-                </ul>
-            </nav>
-        </header>
-        HOME
-        <section>
+    <div>
+        <form>
+            <h4> Initial Tour Algorithms </h4>
+            <select name="improvementALG1">
+                <option value="random tour" selected="selected"> Random Tour</option>
+                <option value="greadytour">Greadytour</option>
+            </select> <br>
+            
+            <h4> Tour Improvement Algorithms </h4>
+            1st algorithm
+            <select name="improvementALG1">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
+            2nd algoritm:
+            <select name="improvementALG2">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
+            3rd algoritm:
+            <select name="improvementALG3">
+                <option value="2opt">2-Opt</option>
+                <option value="2.5opt">2.5-Opt</option>
+                <option value="randomshuffle">random shuffle</option>
+                <option value="none" selected="selected">none</option>
+            </select> <br>
 
-            <h2>Try to get the higest score by combining the different algorithms</h2>
-            <h4>Register high score!</h4>
-            <h4>Show high score!</h4>
-            <h4>BECOME BEST!</h4>
-            <li>Random tour
-                <br>
-                <img src="Resources/localRandom.png" height="150">
-            </li>
-            <li>2 opt <br> 
-                <img src="Resources/2opt.png" height="150">
-            </li>
-            <li>2H opt</li>
-        
-        </ol>
-    </section>
-    </body>
+            <input type="submit" value="Calculate tour">
+            <br>
+            <input type="Reset">
+            <br>
+        </form>
+        <button>hejhejhejhej</button>
+    </div>
+    <div>
+        <footer> made with love</footer>
+    </div>
+
+    <input id="uinput" type="text" placeholder="skriv todo">
+    <button id="add">add to list</button>
+    <ul id="ul2">
+        <li>alg1</li>
+        <li>alg2</li>
+        <li>alg3</li>
+    </ul>
+
+    <script type="text/javascript" src="TSP_Engine/main.js"></script>
+</body>
+
 </html>
-
-

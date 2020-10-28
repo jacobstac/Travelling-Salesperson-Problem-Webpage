@@ -1,0 +1,29 @@
+table {
+    cursor: none;
+    outline: 1px solid rgb(228, 228, 228);
+    outline-offset: -1px;
+}
+
+th {
+    font-weight: lighter;
+    background-color: rgb(247, 247, 247);
+    outline: 1px solid rgb(228, 228, 228);
+    color: rgb(201, 201, 201);
+    width: 25px;
+    height: 25px;
+    
+}
+
+th:hover {
+    color:black;
+    font-weight: bold;
+    /* outline: 1px solid rgb(247, 247, 247); */
+}
+
+.marked {
+    color:rgb(53, 53, 53);
+}
+
+.marked:hover {
+    color: gray;
+}
